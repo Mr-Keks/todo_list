@@ -13,7 +13,7 @@ class Task(models.Model):
     def __str__(self):
         return self.title
     
-class TaskList(models):
+class TaskList(models.Model):
     user_id = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='tasklist')
     task_id = models.ForeignKey('Task', on_delete=models.CASCADE, related_name='tasklist')
 

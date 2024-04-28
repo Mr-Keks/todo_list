@@ -3,3 +3,7 @@
 
 # local db
 db.sqlite3
+
+# python bytecode
+*.pyc
+/__pycache__/

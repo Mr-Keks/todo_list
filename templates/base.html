@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        {% block head %}
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .header {
+                background-color: #f1f1f1;
+                font-size: 15px;
+                height: 80px;
+            }
+            .header h1 {
+                margin: 0;
+                padding: 25px;
+            }
+        </style>
+        {% endblock %}
+    </head>
+    
+    <body>
+        
+        <div class="header">
+            <h1>Todo List</h1>
+        </div>
+        
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
+
